@@ -38,7 +38,7 @@ main {
   display: block;
   margin: 3em auto;
   height: auto;
-  width: 70%;
+  width: 50%;
   box-shadow: 0 0 1em 2em rgba(255,255,255,0.75);
 }
 section {
@@ -53,6 +53,6 @@ section {
   box-shadow: 0 0px 15px;
   transition: background-color 200ms linear;
 }
-section h2 {
+section h1{
   text-align: center;
 }
