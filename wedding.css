@@ -21,15 +21,17 @@ nav {
   font-family: 'Calligraffitti', cursive;
   font-size: 1.25em;
 }
-a {
+nav a {
   text-decoration: none;
   color: inherit;
 }
-header > h1 {
-  margin: 2em 0 1em;
-  font-size: 4em;
+header {
   text-align: center;
   font-family: 'Great Vibes', cursive;
+  margin: 6em 0 1em;
+}
+header > h1 {
+  font-size: 4em;
 }
 main {
   background-color: rgba(255,255,255,0.75);
@@ -43,26 +45,52 @@ main {
   box-shadow: 0 0 1em 2em rgba(255,255,255,0.75);
 }
 section {
-  min-height: 20em;
-  height: 90vh;
+  min-height: 30em;
   width: 75%;
   margin: 0 auto;
   padding: 3em;
 }
-.scrolled {
+.scrolled, .details {
   background-color: rgba(233, 233, 233, 0.8);
   box-shadow: 0 0px 15px;
   transition: background-color 200ms linear;
 }
-section h1{
+section h1, h2 {
   font-family: 'Calligraffitti', cursive;
   text-align: center;
+}
+section > h1 {
   font-size: 2em;
 }
-#attire p {
-  font-size: 1.25em;
-  margin: 0.5em;
+section > h2 {
+  font-size: 1.6em;
 }
-#attire h2 {
-  margin: 0.5em 0 0;
+h3 > span {
+  font-weight: bolder;
+  margin-right: 2em;
+  font-size: 1.25em;
+}
+.detailsContainer {
+  position: relative;
+}
+.details {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.details a {
+  display: block;
+  border-top: 1px solid;
+  font-size: 1em;
+}
+#venueContainer,
+#hotelContainter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main > hr {
+  width: 90%;
+}
+section > hr {
+  width: 50%;
 }
