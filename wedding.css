@@ -7,6 +7,13 @@ body {
   background-attachment: fixed;
   font-size: 18px;
 }
+#hebrew {
+  position: fixed;
+  top: 3px;
+  right: 3px;
+  z-index: 1;
+  font-family: initial;
+}
 nav {
   display: flex;
   justify-content: space-around;
