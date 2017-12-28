@@ -3,6 +3,7 @@ $(function() {
   $(document).scroll(function() {
     var $nav = $("nav");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.parent().height());
+    $('header > h1').toggleClass('mediaQueryScroll', $(this).scrollTop() > $nav.parent().height());
   });
 
   // Smooth scroll
