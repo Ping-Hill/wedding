@@ -50,7 +50,7 @@ section {
   margin: 0 auto;
   padding: 3em;
 }
-.scrolled, .details {
+.scrolled {
   background-color: rgba(233, 233, 233, 0.8);
   box-shadow: 0 0px 15px;
   transition: background-color 200ms linear;
@@ -74,9 +74,16 @@ h3 > span {
   position: relative;
 }
 .details {
+  background-color: rgba(233, 233, 233, 0.8);
+  transition: background-color 200ms linear;
   display: none;
   position: absolute;
+  padding-top: 0.8em;
   width: 100%;
+}
+.detailsActive {
+  display: block;
+  transition: all 300ms linear;
 }
 .details a {
   display: block;

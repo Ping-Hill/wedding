@@ -16,4 +16,12 @@ $(function() {
     }, 800);
   });
 
+  //sub-nav menus
+  $('.detailsContainer').children().hover(function () {
+    $(this).parent().children().last().addClass("detailsActive");
+    $(this).parent().children().first().css("backgroundColor", "rgba(233, 233, 233, 0.8)");
+  },function () {
+    $(this).parent().children().first().css("backgroundColor", "initial");
+    $(this).parent().children().last().removeClass("detailsActive");
+  })
 });
